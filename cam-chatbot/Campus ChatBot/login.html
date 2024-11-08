@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>STUDENT</h2>
+    <h3>SATHYABAMA</h3>
+    <h4>INSTITUTE OF SCIENCE AND TECHNOLOGY (DEEMED TO BE UNIVERSITY)</h4>
+    <p>CATEGORY - 1 UNIVERSITY BY UGC</p>
+    <p>Enter your RegNo and DOB to access student panel.</p>
+
+    <form class="login-form" id="loginForm">
+      <label for="regNo">Register Number</label>
+      <input type="text" id="regNo" name="regNo" placeholder="Register Number" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+      <button type="submit" id="loginBtn">LOG IN</button>
+    </form>
+
+    <footer>
+      <h5>INTERNATIONAL RESEARCH CENTRE</h5>
+    </footer>
+  </div>
+
+  <script>
+    // Add event listener for form submission
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      const regNo = document.getElementById('regNo').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+      // Check if both fields are filled
+      if (regNo === "" || password === "") {
+        // Prevent form submission if either field is empty
+        e.preventDefault();
+        alert('Please fill out both fields!');
+      } else {
+        // Allow the form to submit and redirect to the index page if validation passes
+        // Redirect to the page after validation is successful
+        e.preventDefault();  // prevent the default form submission
+        
+        window.location.href = "index.html";
+      }
+    });
+  </script>
+
+</body>
+</html>

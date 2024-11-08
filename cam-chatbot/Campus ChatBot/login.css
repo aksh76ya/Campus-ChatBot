@@ -1,0 +1,81 @@
+/* Basic styling for the login page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2, h3, h4, p {
+    margin: 10px 0;
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 22px;
+    color: #007BFF;
+  }
+  
+  h4 {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .login-form {
+    margin-top: 20px;
+  }
+  
+  .login-form label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+  
+  footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+  }
